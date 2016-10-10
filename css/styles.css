@@ -1,0 +1,16 @@
+body {
+    background-color: aqua;
+}
+img{
+    width: 500px;
+}
+h1{
+    color: white;
+    font-family: serif;
+    font-size: 40px;
+}
+p{
+    color: darkcyan;
+    font-size: 17px;
+    font-family: sans-serif
+}
