@@ -1,0 +1,138 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: auto;
+    width: auto;
+}
+
+body {
+    color: white;
+    background-image: url("https://static.pexels.com/photos/25996/pexels-photo-25996.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    ...
+}
+
+header img {
+    width: 3.125em;
+    height: 3.125em;
+    border-radius: 3.125em;
+}
+
+
+/* Header */
+
+h1 {
+    display: inline;
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    font-size: .75em;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.83em;
+    flex-direction: row;
+}
+
+.content-box {
+    display: flex;
+    background: rgba(0, 0, 0, 0.53);
+    margin-top: 1em;
+    margin-right: auto;
+    flex-wrap: wrap;
+    max-width: 600px;
+    width: 62.5em;
+    height: 12em;
+    border-radius: 0.31em;
+}
+
+.item {
+    width: 50%;
+    margin-left: 2%;
+    display: inline-block;
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+
+ul.topnav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: .5px rgba(255, 255, 255, 0.41) solid;
+    width: 100%;
+}
+
+#name {
+    display: flex;
+    flex-grow: 2;
+}
+
+ul.topnav li a {
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.25em;
+}
+
+ul.site {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul.site li {
+    text-decoration: none;
+    margin-bottom: 1em;
+    list-style: none;
+    font-size: 1em;
+}
+
+
+/* links on hover */
+
+ul.topnav li a:hover {
+    background-color: #555;
+    border-bottom: .5px white solid;
+}
+
+@media only screen and (max-width: 1920px) {
+    .content-box {
+        display: flex;
+        flex-direction: row;
+        background: rgba(0, 0, 0, 0.53);
+        margin-top: 10em;
+        margin-right: .63em;
+        padding: 3em 1em 3em .2em;
+        flex-wrap: wrap;
+        max-width: 600px;
+        width: 62.5em;
+        height: auto;
+    }
+    .item img {
+        display: flex;
+        flex-direction: row;
+        width: 150%;
+    }
+}
+
+
+}
