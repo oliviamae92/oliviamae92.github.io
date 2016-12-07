@@ -7,23 +7,18 @@
     width: auto;
 }
 
+footer ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 body {
     color: white;
     background-image: url("https://static.pexels.com/photos/25996/pexels-photo-25996.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Raleway', sans-serif;
-    ...
 }
-
-header img {
-    width: 3.125em;
-    height: 3.125em;
-    border-radius: 3.125em;
-}
-
-
-/* Header */
 
 h1 {
     display: inline;
@@ -64,10 +59,18 @@ p {
     display: inline-block;
 }
 
-
-/* Remove margins and padding from the list, and add a black background color */
-
 ul.topnav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: .5px rgba(255, 255, 255, 0.41) solid;
+    width: 100%;
+    top: 0%;
+}
+
+ul.botnav {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -92,6 +95,16 @@ ul.topnav li a {
     font-size: 1.25em;
 }
 
+ul.botnav li a {
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.25em;
+}
+
 ul.site {
     display: flex;
     flex-direction: column;
@@ -106,10 +119,24 @@ ul.site li {
     font-size: 1em;
 }
 
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
 
 /* links on hover */
 
 ul.topnav li a:hover {
+    background-color: #555;
+    border-bottom: .5px white solid;
+}
+
+ul.botnav li a:hover {
     background-color: #555;
     border-bottom: .5px white solid;
 }
